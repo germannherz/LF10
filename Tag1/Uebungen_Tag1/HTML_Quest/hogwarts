@@ -1,0 +1,72 @@
+<!-- Aufgabe: Das Hogwarts-Lehrbuch der magischen Kreaturen
+
+Deine Mission: Erstelle eine HTML-Seite wie ein Schulbuch aus Hogwarts.-->
+
+<!-- 1) h1: Titel des Buches 
+    Fantastische Tierwesen – Schulbuchausgabe -->
+
+<!-- 2) h2: Kapitel (z. B. „Gefährliche Kreaturen“, „Niedliche Kreaturen“)-->
+
+<!-- 3) h3: Einzelne Tiere (z. B. Basilisk, Niffler, Phönix) -->
+<!-- 4) p: Beschreibung pro Tier:   - Was ist das Tier?
+                                    - Wie gefährlich ist es (Skala 1–5 im Text)?
+                                    - Ein Hogwarts-Lehrer, der es unterrichtet (frei erfunden erlaubt!)-->
+
+<!-- Bonus-Nerd-Level: Schreib bei einem Tier eine „Schulnote“ (z. B. „Prüfung nicht bestanden – Schüler verschwunden“).-->
+
+
+<!DOCTYPE html>
+<html lang="de">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Fantastische Tierwesen - Schulausgabe</title>
+    </head>
+        <header>
+        <h1><strong>Fantastische Tierwesen - Schulausgabe</strong><h1>
+        </header>
+
+        <nav>
+
+            <p><h2>Pfad</h2></p>
+                <ul>
+                    <li>
+                        <a href="#">Gefährliche Kreaturen</a>
+
+                    </li>
+                <li><a href="#">Niedliche Kreaturen</a></li>
+
+                </ul>
+
+        </nav>
+<header>
+
+    <hr>
+
+<main>
+    <h3>Basilisk</h3>
+    <p>Ein Basilisk ist eine riesige Schlange, die bis zu 15 Meter lang werden kann. 
+        Er ist auch als "König der Schlangen" bekannt.</p>
+    <br>
+        <p><h4></h4>Gefährlichkeit: <strong>1000/10</strong> bei Kontakt Harry Potter rufen.</p>
+
+        <br>Bei Fragen bitte an <strong>Dr. Merkel</strong> wenden.
+
+        <hr>
+        <h3>Niffler</h3>
+    <p>Niffler sind kleine, flauschige, schwarze Wesen mit einer langen, schnabelartigen Schnauze, 
+        die Maulwürfen ähneln. Sie sind etwa so groß wie eine Hauskatze.</p>
+    <br>
+        <p><h4></h4>Gefährlichkeit: <strong>0.5/10</strong></p>
+
+        <br>Bei Fragen bitte an <strong>Professor Dumpfbrot</strong> wenden.
+        <hr>
+
+
+
+</main>
+</header>
+
+
+    
+</html>

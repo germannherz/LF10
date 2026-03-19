@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="de">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Anchor - Tags (links)</title>
+    </head>
+    <body>
+        <header>
+            <h1>Anchor-Tags (&lt;a&gt;) - Links in HTML</h1>
+
+            <p>Mit dem Anchor Tags können wir Links erstellen. Links führen zu anderen Seiten/Dateien/Stelle auf der selben Seite.</p>
+
+        </header>
+
+        <hr>
+
+        <main>
+            <section id="ziel">
+                <h2>1.Grundaufbau eines Links</h2>
+                <p>So sieht ein einfacher Link im Code aus:</p>
+
+                <pre>&lt;a href="https://www.google.com/"&gt;Ich bin ein Link&lt;/a&gt;</pre>
+
+                <p>So sieht ein Link im Browser aus:</p>
+
+                <a href="https://www.google.com/">Das ist ein Link</a>
+
+            </section>
+
+            <section>
+                <h2>2.Das Attribut hrf</h2>
+                <p>href steht für Hypertext Reference. Das Attribut gibt an, wohin der Link führt
+                    Ohne href ist es kein richtiger Link.
+                </p>
+
+                <ul>
+                    <li><code>href="./010_hallo.html"</code>→ Link zu einer Datei im gleichen Ordner</li>
+                    <li><code>href="#ziel"</code>→ Link zu einer Stelle auf der selben Seite</li>
+                    <li><code>href="https://www.google.com/"</code>→ Link der zu einer anderen Website führt</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>3.Link in einem neuen Tab öffnen</h2>
+                <p>Mit <code>target="_blank"</code>öffnet sich der Link in einem neuen Tab</p>
+                <pre>&lt;a href="https://www.google.com/" target="_blank" rel="noopener nopreferrer&gt;Ich bin ein Link&lt;/a&gt;</pre>
+
+                <p>So sieht ein Link im Browser aus:</p>
+
+                <a href="https://www.google.com/" target="_blank" rel="noopener nopreferrer">Das ist ein Link</a>
+
+                <p><strong>noopener</strong> <br>
+                    Sicherheit bei <code>target="_blank"</code>, dass die Zielseite, meine Seite nicht manipulieren kann.
+                </p>
+
+
+                <p><strong>noreferrer</strong> <br>
+                    Datenschutz, bedeutet die Zielseite sieht nicht, von welcher Seite der Klick kam.
+                </p>
+
+                <p><strong>rel</strong> <br>
+                    eng. relationship / dt. Beziehung
+                </p>
+            </section>
+            
+            <section>
+                <h2>4.Email und Telefon Links</h2>
+
+                <article>
+                    <h3>Email (mailto)</h3>
+
+                    <pre>&lt;a href="mailto:beispiel@gmail.com"&gt; E-Mail schreiben &lt;/a&gt;</pre>
+                    
+                    <p>Unser Browser öffnet das Standard E-mail Programm des Nutzers. Und erstellt uns automatisch:
+                        Empfänger (Email ist schon ausgefüllt), Betreff:leer, Text:leer.
+                    </p>
+
+                    <a href="mailto:beispiel@gmail.co">Email schreiben</a>
+                </article>
+
+                <article>
+                    <h3>Telefon (tel)</h3>
+
+                    <pre>&lt; a href="tel: +49123456789"&gt;Jetzt anrufen&lt;/a&gt;</pre>
+
+                    <p>Smartphone und Tablets öffnen direkt die Telefon App zum Anrufen.
+                            PCs können die Funktion nur nutzen, wenn die dafür zuständige App vorhanden ist.
+                    </p>
+
+                    <a href="tel:+49123456789">Jetzt anrufen</a>
+
+                </article> 
+            </section>
+
+            <section>
+                <h2>5.Interne Links (Sprungmarken)</h2>
+                <p>Du kannst innerhalb der selben ASeite springen. Dafür braucht man das Zielelement id.</p>
+
+                <pre>&lt;a href="#ziel"&gt;Spring zum Ziel&lt;/a&gt;</pre>
+                <a href="#ziel">Spring zum Ziel</a>
+
+                <h3>Bei Seiten auf bestimmten Spruingmarken landen.</h3>
+                <p>Du kannst dirket auf einer bestimmten Seite an einer bestimmten Seite landen, wenn
+                    diese eine ntsprechende id hat.
+                </p>
+
+                <pre>&lt;a href="./030_stuktur_elemente.html#hinweis"&gt;Lande auf der Seite mit dem Hinweis&lt;/a&gt;></pre>
+
+                <a href="./030_struktur_elemente.html">Lande auf der Seite mit dem Hinweis</a>
+
+                <p>Du kannst auf eine anderen Domain springen und direkt zu einer bestimmten Stelle landen.</p>
+
+                <pre>&lt;a href="https://de.wikipedia.org/wiki/Basilisk_(Mythologie)#Aachen" target="_blank" rel=" noopener noreferrer&gt;Basilisk in Aachen&lt;/a&gt;</pre>
+                
+                <a href="https://de.wikipedia.org/wiki/Basilisk_(Mythologie)#Aachen" target="_blank" rel="noopener noreferrer" >Basilisk in Aachen</a>
+            </section>
+
+        </main>
+    </body>
+</html>
