@@ -1,0 +1,106 @@
+<!-- Sherlock Holmes – „Fallakte-System“
+
+Aufgabe: Du bist Assistent von Sherlock Holmes und verwaltest Fälle.
+
+Anforderungen:  - 1. Kontaktformular (Fall aufnehmen)
+                - Name des Klienten
+                - Tatort
+                - Art des Falls (Dropdown: Diebstahl, Mord, Vermisst)
+                - Beschreibung (Textarea)
+                - Dringlichkeit (Radio: niedrig / mittel / hoch)
+                - Button: „Fall speichern“
+
+2. Tabelle (Fallübersicht):     - Fallnummer
+                                - Klient
+                                - Status (offen / in Bearbeitung / gelöst)
+                                - Priorität
+
+Bonus: Nutze ein „Vintage“-Design (z. B. Serif-Schrift, beige Hintergrund) -->
+
+<!DOCTYPE html>
+<html lang="de">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Holmes</title>
+    </head>
+
+    <body>
+        <header>
+            <h2>Kontaktformular</h2>
+        </header>
+
+        <main>
+            <section>
+                <h3>Fallaufnahme</h3>
+                <p>Tragen Sie bitte nur das nötigste ein.</p>
+
+                <form>
+                    <p>
+                        <label for="name">Name des Klienten</label>
+                        <input type="text" name="name" id="name">
+                    </p>
+
+                    <p>
+                        <label for="tatort">Tatort</label>
+                        <input type="text" name="tatort" id="tatort">
+                    </p>
+
+                    <p>
+                        <label for="art">Art des Falls</label>
+                        <select name="art" id="art">
+                            <option value="" disabled selected>Bitte auswählen</option>
+                            <option value="diebstahl">Diebstahl</option>
+                            <option value="mord">Mord</option>
+                            <option value="vermisst">Vermisst</option>
+                        </select>
+                    </p>
+
+                    <p>
+                        <label for="Beschreibung">Beschreibung</label>
+                        <textarea name="beschreibung" id="beschreibung" cols="50" rows="10" minlength="10" maxlength="750"></textarea>
+                    </p>
+
+                    <p>
+                        <label for="prio">Dringlichkeit</label>
+                        <input type="number" name="prio" id="prio" min="1" max="10">
+                    </p>
+
+                    <p>
+                        <input type="checkbox" name="privacy" id="privacy" required>
+                        <label for="privacy">Ich akzeptiere die Datenschutzbedinungen.</label>
+                    </p>
+
+                    <button type="submit">Fall speichern</button>
+                </form>
+
+
+            </section>
+
+
+            <section>
+                <table border="1">
+                    <caption>Fallübersicht</caption>
+                    <thead>
+                        <tr>
+                            <th>Fallnummer</th>
+                            <th>Klient</th>
+                            <th>Status des Falls</th>
+                            <th>Priorität</th>
+                        </tr>
+                    </thead>
+                    <br><br><br><br><br><br>
+                    <tbody>
+                        <tr>
+                            <td>007</td>
+                            <td>Hans Peter</td>
+                            <td>gelöst</td>
+                            <td>1</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+        </main>
+    
+    </body>
+</html>
